@@ -5,10 +5,7 @@ import Image from "../Image/Image";
 export type ImageCaptionProps = {
   Caption: string;
   Copyright: string;
-  Image: {
-    filename: string;
-    alt: string;
-  };
+  Image: string;
   Link?: {
     url?: string;
     cached_url?: string;
@@ -18,16 +15,16 @@ export type ImageCaptionProps = {
 };
 
 export const ImageCaption = ({
-  content,
+  section,
 }: {
-  content: ImageCaptionProps;
+  section: ImageCaptionProps;
 }) => {
   const {
     Caption: caption,
     Copyright: copyright,
     Image: image,
     Link: link,
-  } = content;
+  } = section;
 
   const url = link?.cached_url || link?.url;
 
@@ -36,8 +33,8 @@ export const ImageCaption = ({
       <div className={styles.Image}>
         
         {url 
-          ? <a href={url}><Image src={image.filename} alt={image.alt} width={325} height={325} desktopWidth={1220} isSmart /></a>
-          : <Image src={image.filename} alt={image.alt} width={325} height={325} desktopWidth={1220} isSmart />
+          ? <a href={url}><Image src={image} alt={""} width={325} height={325} desktopWidth={1220} isSmart /></a>
+          : <Image src={image} alt={""} width={325} height={325} desktopWidth={1220} isSmart />
         }
       </div>
       <div className={styles.TextContainer}>
