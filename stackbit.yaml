@@ -289,6 +289,7 @@ models:
             - features_section
             - hero_section
             - team_section
+            - image_caption
       - type: model
         name: seo
         models:
@@ -495,6 +496,22 @@ models:
           type: reference
           models:
             - person
+  image_caption:
+    type: object
+    label: Image Caption
+    labelField: Caption
+    fields:
+      - type: string
+        name: Caption
+        label: Caption
+        description: The caption of the section
+      - type: string
+        name: Copyright
+        label: Copyright
+      - type: image
+        name: Image
+        label: Image
+        description: The image of the feature
   feature:
     type: object
     label: Feature
