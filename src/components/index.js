@@ -14,6 +14,7 @@ import HeroSection from './HeroSection';
 import Layout from './Layout';
 import SectionActions from './SectionActions';
 import TeamSection from './TeamSection';
+import ImageCaption from './ImageCaption/ImageCaption.tsx';
 
 export {
     Action,
@@ -31,7 +32,8 @@ export {
     HeroSection,
     Layout,
     SectionActions,
-    TeamSection
+    TeamSection,
+    ImageCaption
 };
 
 export default {
@@ -50,5 +52,6 @@ export default {
     HeroSection,
     Layout,
     SectionActions,
-    TeamSection
+    TeamSection,
+    ImageCaption
 };

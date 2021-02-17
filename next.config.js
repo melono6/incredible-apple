@@ -29,6 +29,24 @@ module.exports = {
         // Instead, the src/pages/[...slug].js uses the "withRemoteDataUpdates"
         // function to update the content on the page without refreshing the
         // whole page
+        config.module.rules.push({
+            test: /\.svg$/,
+            issuer: {
+              test: /\.(js|ts)x?$/,
+            },
+            use: [
+              {
+                loader: "@svgr/webpack",
+                options: {
+                  svgoConfig: {
+                    plugins: {
+                      removeViewBox: false,
+                    },
+                  },
+                },
+              },
+            ],
+          });
         config.plugins.push(new webpack.WatchIgnorePlugin([/\/content\//]));
         return config;
     }
