@@ -274,6 +274,10 @@ models:
         label: Title
         description: The title of the page
         required: true
+      - type: string
+        name: description
+        label: Description
+        description: The title of the page
       - type: list
         name: sections
         label: Sections
