@@ -15,6 +15,7 @@ import Layout from './Layout';
 import SectionActions from './SectionActions';
 import TeamSection from './TeamSection';
 import ImageCaption from './ImageCaption/ImageCaption.tsx';
+import Introduction from './Introduction/Introduction';
 
 export {
     Action,
@@ -33,7 +34,8 @@ export {
     Layout,
     SectionActions,
     TeamSection,
-    ImageCaption
+    ImageCaption,
+    Introduction,
 };
 
 export default {
@@ -53,5 +55,6 @@ export default {
     Layout,
     SectionActions,
     TeamSection,
-    ImageCaption
+    ImageCaption,
+    Introduction
 };
