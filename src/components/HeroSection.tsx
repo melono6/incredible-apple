@@ -6,7 +6,7 @@ import SectionActions from "./SectionActions";
 export const HeroSection = props => {
   const { section } = props;
   const {
-    background,
+    background = {},
     has_background,
     title,
     subtitle,
@@ -18,7 +18,7 @@ export const HeroSection = props => {
   } = section;
 
   const {
-    background_color,
+    background_color = null,
     background_image,
     background_image_opacity: background_opacity_pct,
     background_image_size: background_size,
