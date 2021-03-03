@@ -1,1 +1,0 @@
-export { getDevice, useDevice } from './get-device';

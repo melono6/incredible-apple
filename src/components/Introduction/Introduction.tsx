@@ -1,5 +1,5 @@
 import React from "react";
-import { useDevice } from "../../utils/get-device";
+import { useDevice } from "../../utils/getDevice";
 import Grid from "../../utils/Grid";
 import Heading from "../Heading/Heading";
 import styles from "../Introduction/Introduction.module.scss";
