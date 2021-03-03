@@ -278,6 +278,7 @@ models:
             - hero_section
             - team_section
             - image_caption
+            - introduction
       - type: model
         name: seo
         models:
@@ -500,6 +501,23 @@ models:
         name: Image
         label: Image
         description: The image of the feature
+  introduction:
+    type: object
+    label: Introduction
+    labelField: Caption
+    fields:
+      - type: string
+        name: Title
+        label: Title
+        description: The title of the secion
+      - type: string
+        name: Subheading
+        label: Subheading
+        description: The subheading of the secion
+      - type: string
+        name: Copy
+        label: Copy
+        description: The main copy of the secion
   feature:
     type: object
     label: Feature

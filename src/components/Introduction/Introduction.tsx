@@ -5,7 +5,7 @@ import Heading from "../Heading/Heading";
 import styles from "../Introduction/Introduction.module.scss";
 
 export type IntroductionProps = {
-  content: {
+  section: {
     title: string;
     subheading: string;
     copy: string;
@@ -13,11 +13,9 @@ export type IntroductionProps = {
   };
 };
 
-export const Introduction = ({ content }: IntroductionProps) => {
+export const Introduction = ({ section }: IntroductionProps) => {
 
-  console.log(content);
-
-  const { title, subheading, copy, component } = { ...content };
+  const { title, subheading, copy, component } = { ...section };
   const isSectionHeading = component && component === "sectionIntroduction";
   const headingType = isSectionHeading ? "h2" : "h1";
   const device = useDevice();
