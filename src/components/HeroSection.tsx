@@ -19,7 +19,7 @@ export const HeroSection = ( props ) => {
 
   return (
       <section className={classNames('section', 'hero', {'bg-image': has_background && background_image, 'inverse bg-blue': has_background && (background_color === 'blue'), 'bg-gray': has_background && (background_color === 'gray'), 'section--padding': has_background || image})}>
-        {has_background && background_image) && (
+        {has_background && background_image && (
         <div className="bg-image__image" style={toStyleObj('background-image: url(\'' + withPrefix(background_image) + '\'); opacity: ' + background_opacity + '; background-size: ' + background_size + '; background-repeat: ' + background_repeat)}/>
         )}
         <div className="container container--lg">
