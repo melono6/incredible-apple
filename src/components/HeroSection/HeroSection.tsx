@@ -1,7 +1,7 @@
 import React from "react";
 
-import { classNames, toStyleObj, withPrefix } from "../utils";
-import SectionActions from "./SectionActions";
+import { classNames, toStyleObj, withPrefix } from "../../utils";
+import SectionActions from "../SectionActions";
 
 export const HeroSection = props => {
   const { section } = props;

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import _ from 'lodash';
 
 import {withPrefix, attribute} from '../utils';
-import Header from './Header';
+import Header from './Header/Header';
 import Footer from './Footer';
 
 export default class Body extends React.Component {

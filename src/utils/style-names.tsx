@@ -1,4 +1,4 @@
-const styleNames = (styles: object, classes: any[]) => {
+const styleNames = (styles: object, classes: any[], globalClasses?: string[]) => {
   const newArray: string[] = [];
   classes.map((themeItem: string | string[]) => {
     if (typeof themeItem === "string" && styles[themeItem])
@@ -10,6 +10,11 @@ const styleNames = (styles: object, classes: any[]) => {
     }
     return;
   });
+
+  globalClasses?.forEach((className) => {
+    newArray.push(className);
+  });
+
   return newArray.join(" ");
 };
 
