@@ -20,6 +20,8 @@
 
 .bg-blue,
 .bg-gray,
+.bg-black,
+.bg-red,
 .has-bg {
   padding-bottom: 3.75em;
   padding-top: 3.75em;
@@ -27,6 +29,12 @@
 
 .bg-blue {
   background-color: $color-inverse-bg;
+}
+.bg-blue {
+  background-color: $color-black;
+}
+.bg-red {
+  background-color: $color-red;
 }
 
 .bg-gray {

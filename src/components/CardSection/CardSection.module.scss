@@ -1,0 +1,83 @@
+@import "../../styles/variables.scss";
+
+.NumberGrid {
+  padding: 0 3vw 5rem;
+}
+
+.Inner {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TitleWrap {
+  margin-bottom: 2.5rem;
+  margin-left: 0;
+}
+
+.Title {
+
+}
+
+.SubTitle {
+
+}
+
+.CardBlock {
+  display: flex;
+}
+
+.CardContainer {
+  margin: .5rem 0;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  box-sizing: border-box;
+  padding: 0 1rem;
+
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.Card {
+  box-shadow: none;
+  color: black;
+  background-color: white;
+  border-radius: 6px;
+  transform: translateY(0);
+  transition: .3s ease;
+  border: 1px solid #eceef1;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 1.5rem;
+
+  &:hover {
+    box-shadow:0 2px 30px rgba(44, 52, 60, 0.1);
+    transform: translateY(-5px);
+  }
+}
+
+.CardInner {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.Icon {
+  margin-bottom: 1rem;
+}
+
+.CtaContainer {
+  margin-top: 1.5rem;
+}
+
+.CtaIcon {
+  flex-shrink: 0;
+  height: 1em;
+  line-height: 1;
+  width: 1em;
+}

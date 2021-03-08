@@ -33,6 +33,8 @@ export const HeroSection = props => {
         "bg-image": has_background && background_image,
         "inverse bg-blue": has_background && background_color === "blue",
         "bg-gray": has_background && background_color === "gray",
+        "bg-black": has_background && background_color === "black",
+        "bg-red": has_background && background_color === "red",
         "section--padding": has_background || image
       })}
     >

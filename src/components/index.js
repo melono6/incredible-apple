@@ -1,9 +1,4 @@
 import Action from './Action';
-import BlogFeedItemFilter from './BlogFeedItemFilter';
-import BlogFeedSection from './BlogFeedSection';
-import BlogPostCategories from './BlogPostCategories';
-import BlogPostFeedItem from './BlogPostFeedItem';
-import BlogPostTags from './BlogPostTags';
 import ContactSection from './ContactSection';
 import ContentSection from './ContentSection';
 import CtaSection from './CtaSection';
@@ -16,14 +11,13 @@ import SectionActions from './SectionActions';
 import TeamSection from './TeamSection';
 import ImageCaption from './ImageCaption/ImageCaption.tsx';
 import Introduction from './Introduction/Introduction';
+import AlgoliaBlock from './AlgoliaBlock/AlgoliaBlock';
+import TestimonialSection from './TestimonialSection/TestimonialSection';
+import NumberGridSection from './NumberGridSection/NumberGridSection';
+import CardSection from './CardSection/CardSection';
 
 export {
     Action,
-    BlogFeedItemFilter,
-    BlogFeedSection,
-    BlogPostCategories,
-    BlogPostFeedItem,
-    BlogPostTags,
     ContactSection,
     ContentSection,
     CtaSection,
@@ -36,15 +30,14 @@ export {
     TeamSection,
     ImageCaption,
     Introduction,
+    AlgoliaBlock,
+    TestimonialSection,
+    NumberGridSection,
+    CardSection,
 };
 
 export default {
     Action,
-    BlogFeedItemFilter,
-    BlogFeedSection,
-    BlogPostCategories,
-    BlogPostFeedItem,
-    BlogPostTags,
     ContactSection,
     ContentSection,
     CtaSection,
@@ -56,5 +49,9 @@ export default {
     SectionActions,
     TeamSection,
     ImageCaption,
-    Introduction
+    Introduction,
+    AlgoliaBlock,
+    TestimonialSection,
+    NumberGridSection,
+    CardSection,
 };

@@ -1,15 +1,12 @@
 import advanced from './advanced';
 import page from './page';
-import post from './post';
 
 export {
     advanced,
-    page,
-    post
+    page
 };
 
 export default {
     advanced,
-    page,
-    post
+    page
 };

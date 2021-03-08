@@ -595,6 +595,39 @@ models:
         label: No follow
         default: false
         description: Add rel="nofollow" attribute to the link
+  testimonial_section:
+    type: object
+    label: Testimonial Section
+    labelField: title
+    fields: 
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: subtitle
+        label: SubTitle
+      - type: model
+        name: testimonials
+        label: Testimonials
+        models:
+          - testimonial
+  testimonial:
+    type: object
+    label: Testimonial
+    labelField: author
+    fields:
+      - type: string
+        name: author
+        label: Author
+      - type: image
+        name: avatar
+        label: Avatar
+      - type: string
+        name: avatar_alt
+        label: Avatar Alt
+      - type: string
+        name: content
+        label: Content
   stackbit_page_meta:
     type: object
     label: Page meta data

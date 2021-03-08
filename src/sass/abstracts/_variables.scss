@@ -1,4 +1,9 @@
 // Colors
+
+// rufus 
+$color-black: #181818;
+$color-red: #e1231a;
+
 // Base
 $color-text:                   #536171 !default;
 $color-heading:                #282f36 !default;
@@ -17,11 +22,11 @@ $color-blockquote-border:      #28aaff !default;
 
 // Buttons
 $color-btn:                    #fff !default;
-$color-btn-bg:                 #28aaff !default;
-$color-btn-border:             #28aaff !default;
-$color-btn-alt:                #28aaff !default;
+$color-btn-bg:                 $color-red !default;
+$color-btn-border:             $color-red !default;
+$color-btn-alt:                $color-red !default;
 $color-btn-alt-bg:             transparent !default;
-$color-btn-alt-border:         #28aaff !default;
+$color-btn-alt-border:         $color-red !default;
 $color-btn-clear:              #282f36 !default;
 
 // Navigation
@@ -35,12 +40,14 @@ $color-inverse-heading:        #fff !default;
 $color-inverse-bg:             #005bc4 !default;
 $color-inverse-link:           #f5f6f7 !default;
 $color-inverse-btn:            #fff !default;
-$color-inverse-btn-bg:         #28aaff !default;
-$color-inverse-btn-border:     #28aaff !default;
-$color-inverse-btn-alt:        #28aaff !default;
+$color-inverse-btn-bg:         $color-red !default;
+$color-inverse-btn-border:     $color-red !default;
+$color-inverse-btn-alt:        $color-red !default;
 $color-inverse-btn-alt-bg:     #fff !default;
 $color-inverse-btn-alt-border: #fff !default;
 $color-inverse-btn-clear:      #fff !default;
+
+
 
 
 // Shadows

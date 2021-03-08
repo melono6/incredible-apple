@@ -1,0 +1,92 @@
+@import "../../styles/variables.scss";
+
+.Testimonials {
+  padding: 0 3vw 5rem;
+}
+
+.Inner {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TitleWrap {
+  margin-bottom: 2.5rem;
+  margin-left: 0;
+}
+
+.Title {
+
+}
+
+.SubTitle {
+
+}
+
+.TestimonialsBlock {
+  display: flex;
+}
+
+.TestimonialContainer {
+
+  &--1 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  &--2 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  &--3 {
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+  
+}
+
+.Testimonial {
+  font-size: 1em;
+  line-height: 1.66667;
+  margin: 0;
+  padding-left: 1.66667rem;
+  padding-top: .5rem;
+  position: relative;
+  quotes: none;
+  border-left: none;
+
+  &::before {
+    font-size: 3rem;
+    color: #d8195e;
+    content: "\201C";
+    font-size: 2.5rem;
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.TestimonialContent {
+  margin-bottom: .5rem;
+}
+
+.TestimonialFooter {
+  align-items: center;
+  display: flex;
+  margin-top: 1.33333rem;
+}
+
+.TestimonialAvatar {
+  border-radius: 50%;
+  height: 6rem;
+  margin-right: .83333rem;
+  width: 6rem;
+}
+
+.TestimonialAuthor {
+  font-size: .88889rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.5;
+  font-style: normal;
+}
