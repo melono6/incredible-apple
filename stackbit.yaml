@@ -279,6 +279,7 @@ models:
             - team_section
             - image_caption
             - introduction
+            - testimonial_section
       - type: model
         name: seo
         models:
